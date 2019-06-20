@@ -1,10 +1,10 @@
 import React from 'react';
-import Home from './Home.jsx';
+import CardHome from './CardlHome.jsx';
 
 function App() {
   return (
     <div>
-      <Home />
+      <CardHome />
     </div>
   );
 }

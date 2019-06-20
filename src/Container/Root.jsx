@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import '../styles/AppStyle.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import HeadNav from '../HeadNav.jsx';
-import Home from '../Home.jsx';
-import App from '../App.jsx';
+import HeadNav from '../Components/HeadNav.jsx';
+import CardHome from '../Components/CardlHome.jsx';
+import App from '../Components/App.jsx';
 
 export default class Root extends Component {
   render() {
@@ -11,8 +11,9 @@ export default class Root extends Component {
       <BrowserRouter>
         <div className="App-header">
           <HeadNav />
+          <br />
           <div className="container">
-            <Home />
+            <CardHome />
             <Switch>
               <Route exact path="/" Component={App} />
             </Switch>
